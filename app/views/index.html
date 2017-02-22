@@ -1,0 +1,73 @@
+<table class="table table-striped table-hover">
+  <td>
+    <span style="text-transform:uppercase"><strong>Champions</strong></span>
+  </td>
+  <td>
+    <span style="text-transform:uppercase"><strong>Descriptions</strong></span>
+  </td>
+  <tr ng-repeat="champion in champions | filter : query">
+    <td><span style="text-transform:uppercase"><strong>{{champion.id}}</strong></span></br>
+      <span style="text-transform:italic"><strong>{{champion.title}}</strong></span></br>
+      <img src="{{champion.icon.replace('http:','https:')}}" alt="">
+    </td>
+    <td>
+      {{ champion.description }}
+    </td>
+    <td>
+      <label>Learn more: <input type="checkbox" ng-model="m[champion.id]"></label><br/>
+      <div ng-show="m[champion.id]">
+            <div class="background" ng-click="m[champion.id] = false"></div>
+             <div class="modal1">
+                 <table class="table table-striped table-hover">
+                     <tr>
+                       <td>
+                         hp: </br>
+                         hpperlevel: </br>
+                         mp: </br>
+                         mpperlevel: </br>
+                         movespeed: </br>
+                         armor: </br>
+                         armorperlevel: </br>
+                         spellblock: </br>
+                         spellblockperlevel: </br>
+                         attackrange: </br>
+                         hpregen: </br>
+                         hpregenperlevel: </br>
+                         mpregen: </br>
+                         mpregenperlevel: </br>
+                         crit: </br>
+                         critperlevel: </br>
+                         attackdamage: </br>
+                         attackdamageperlevel: </br>
+                         attackspeedoffset: </br>
+                         attackspeedperlevel: </br>
+                       </td>
+                       <td>
+                         {{champion.stats.hp}} </br>
+                         {{champion.stats.hpperlevel}} </br>
+                         {{champion.stats.mp}} </br>
+                         {{champion.stats.mpperlevel}} </br>
+                         {{champion.stats.movespeed}} </br>
+                         {{champion.stats.armor}} </br>
+                         {{champion.stats.armorperlevel}} </br>
+                         {{champion.stats.spellblock}} </br>
+                         {{champion.stats.spellblockperlevel}} </br>
+                         {{champion.stats.attackrange}} </br>
+                         {{champion.stats.hpregen}} </br>
+                         {{champion.stats.hpregenperlevel}} </br>
+                         {{champion.stats.mpregen}} </br>
+                         {{champion.stats.mpregenperlevel}} </br>
+                         {{champion.stats.crit}} </br>
+                         {{champion.stats.critperlevel}} </br>
+                         {{champion.stats.attackdamage}} </br>
+                         {{champion.stats.attackdamageperlevel}} </br>
+                         {{champion.stats.attackspeedoffset}} </br>
+                         {{champion.stats.attackspeedperlevel}} </br>
+                       </td>
+                     </tr>
+                 </table>
+             </div>
+         </div>
+    </td>
+  </tr>
+</table>

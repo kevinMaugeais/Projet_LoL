@@ -1,0 +1,58 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+div.logo {
+	padding: 25px;
+    background: #000000;
+    text-align: center;
+}
+
+/* -------------- HEADER------------------*/
+
+.block-header .nav {
+  padding: 1em 0 0;
+}
+.block-header .nav a {
+  font: 1.2rem Arsenal, sans-serif;
+  color: black;
+}
+.block-header .nav a:hover, .block-header .nav a:focus {
+  color: #234567;
+}
+.modal1 {
+            left: 0;
+            right: 0;
+            top: 10%;
+            width: 450px;
+            position: fixed;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            z-index: 999;
+        }
+        div.background {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+        }
+.navbar-fixed-top, .navbar-fixed-bottom {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
